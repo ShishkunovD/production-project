@@ -1,0 +1,27 @@
+{
+  "Basic React FC": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "rfc",
+    "body": [
+        "import { classNames } from 'shared/lib/classNames/classNames'",
+        "import cls from './${TM_FILENAME_BASE/[\\.-]/_/g}.module.scss'",
+        "",
+
+        "interface ${TM_FILENAME_BASE/[\\.-]/_/g}Props {",
+        "   className?: string",
+        "}",
+
+        "",
+        
+        "const ${TM_FILENAME_BASE/[\\.-]/_/g} = ({ className }: ${TM_FILENAME_BASE/[\\.-]/_/g}Props) => {",
+        "  return (",
+        "    <div className={classNames(cls.${TM_FILENAME_BASE/[\\.-]/_/g}, {}, [className])}>",
+        "      ",
+        "    </div>",
+        "  )",
+        "}",
+        "",
+        "export { ${TM_FILENAME_BASE/[\\.-]/_/g} };"
+    ],
+  },
+}

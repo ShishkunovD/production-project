@@ -7,12 +7,20 @@
       "jsx": "react-jsx",
       "allowJs": true, 
       "moduleResolution": "node",
+      "baseUrl": ".",
+      "paths": {
+        "*": ["./src/*"]
+      },
       "esModuleInterop": true,
-      "allowSyntheticDefaultImports": true
+      "allowSyntheticDefaultImports": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
     },
     "ts-node": {
       "compilerOptions": {
         "module": "CommonJS"
       }
-    } 
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
   }
